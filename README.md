@@ -12,7 +12,8 @@ In the first step the pdf is converted to individual html pages using
     pdftohtml.exe pdf_file.pdf html
     
 where `pdf_file.pdf` is the pdf to be analysed and `html` is the output directory.
-From the html output we generate the index by running the python script `extract_from_html` which assumes the `html` folder to be present and generates and html file with the index.
+
+From the html output we generate the index by running the python script `extract_from_html` which assumes the `html` folder to be present in the same folder and a `keywords.txt` with the entries to be analysed in the second column. This then generates an html file `index.html` with the index.
 
 # Using PDFQuery
 
