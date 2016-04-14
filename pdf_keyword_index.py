@@ -8,14 +8,13 @@ import StringIO
 from lxml import etree
 import textract
 
-s = u"Königsegg"
+s = u"Test"
 print(s)
 
-word_list = [u"Königsegg", u"Koppel", u"Kornek", u"Kratz", u"Krebs", u"Kristaller",]
+word_list = [u"Hallo", u"Python"]
 print(word_list, )
 
-
-fp = "Obenaus_Umbruch_S1-462_low_MO_2.pdf"
+fp = 'test.pdf'
 text = textract.process(fp, encoding='latin-1')
 parser = textract.parsers.pdf_parser.Parser()
 text = parser.extract(fp, method='tesseract')

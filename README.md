@@ -12,5 +12,12 @@ In the first step the pdf is converted to individual html pages using
     pdftohtml.exe pdf_file.pdf html
     
 where `pdf_file.pdf` is the pdf to be analysed and `html` is the output directory.
-From the html output we generate the index by running the python script `extract_from_html` which assumes the `html` folder to be present and generates and html index.
+From the html output we generate the index by running the python script `extract_from_html` which assumes the `html` folder to be present and generates and html file with the index.
+
+# Using PDFQuery
+
+There is the very nice module [PDFQuery](https://github.com/jcushman/pdfquery) with which one could also achieve the same and staying within the python universe.
+However, it seemed to be rather complicated to deal with German text and sort out the character encoding as lxml failed to read in the pages.
+
+So for now, there is only the testing file `pdf_keyword_index.py`, which might be a basis for future developments.
 
